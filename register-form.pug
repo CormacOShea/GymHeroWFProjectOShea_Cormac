@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= pageHeader.title
+  .row
+    .col-12.col-md-8
+      form(action="", method="get", role="form")
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="name") User name
+          .col-12.col-sm-10
+            input#name.form-control(name="name")
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="password") Password
+          .col-12.col-sm-10
+            input#password.form-control(name="password")
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="email") Email
+          .col-12.col-sm-10
+            input#email.form-control(name="email")
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for="county") County
+          .col-12.col-sm-2
+            select#county.form-control.input-sm(name="county")
+              option Kerry
+              option Cork
+              option Tipperay
+              option Limerick
+              option Clare
+              option Waterford              
+        button.btn.btn-primary.float-right Register
+    .col-12.col-md-4
