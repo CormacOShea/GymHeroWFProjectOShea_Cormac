@@ -6,7 +6,8 @@ const ctrlOthers = require('../controllers/others');
 /* Locations pages */
 router.get('/', ctrlLocations.homelist);
 router.get('/location', ctrlLocations.locationInfo);
-router.get('/hercules', ctrlLocations.herculesLocationInfo);
+/*router.get('/hercules', ctrlLocations.herculesLocationInfo);
+router.get('/cork', ctrlLocations.corkCityLocationInfo);/*
 /* Register page */
 router.get('/register', ctrlLocations.addReview);
 /* Login Page */
